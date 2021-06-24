@@ -7,11 +7,6 @@ const foodListMarkup = createFoodListMarkup(foods)
 foodList.insertAdjacentHTML('afterbegin', foodListMarkup)
 
 
-const Theme = {
-    LIGHT: 'light-theme',
-    DARK: 'dark-theme',
-  };
-
 function createFoodListMarkup (foods){
     return foods.map(foodListTmp).join('')
 }
